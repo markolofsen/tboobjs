@@ -1,0 +1,11 @@
+@import '../../../style/global/global.scss';
+
+
+.catalogWrapper {
+    @include screen(max, md) {
+        // padding: 30px 0;
+    }
+    @include screen(min, md) {
+        padding: 30px 0;
+    }
+}

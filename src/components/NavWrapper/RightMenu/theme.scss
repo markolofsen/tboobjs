@@ -1,0 +1,13 @@
+@import '../../../style/global/global.scss';
+
+
+
+.menuTraderHint {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-tiny);
+    padding: 3px;
+    // background: var(--color-bg);
+    background: #fff;
+    border-radius: var(--border-radius);
+    margin-right: 25px;
+}

@@ -1,0 +1,70 @@
+@import '../../../style/global/global.scss';
+
+.catalogBlock {
+    padding: 30px 0;
+}
+
+
+.profileWrapper {
+
+    @include screen(min, md) {
+        padding: 30px 0;
+    }
+    @include screen(max, md) {
+        margin-bottom: 20px;
+    }
+}
+
+
+.profileBlock {
+
+    @include screen(max, md) {
+        text-align: center;
+        padding: 10px;
+    }
+
+    @include screen(min, md) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+    }
+
+    & > li {
+        flex: 1 1 auto;
+        @include screen(max, md) {
+            padding: 5px;
+        }
+        & > ul {
+            & > li {
+                padding: 5px 0;
+            }
+        }
+    }
+    & [data-li="avatar"] {
+        @include screen(min, md) {
+            min-width: 100px;
+            max-width: 100px;
+        }
+        & img {
+            width: 80px;
+            border-radius: 50%;
+            border: solid 3px #fff;
+            box-shadow: var(--shadow-2p);
+        }
+    }
+
+    & [data-li="name"] {
+        font-size: 20px;
+    }
+
+    & [data-li="phone"] {
+        font-size: 30px;
+        font-weight: var(--font-weight-thin);
+    }
+    & [data-ul="details"] {
+        color: var(--color-text-secondary);
+        font-size: var(--font-size-small);
+    }
+}

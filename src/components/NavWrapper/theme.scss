@@ -1,0 +1,24 @@
+@import '../../style/global/global.scss';
+
+.headerLogo {
+    flex: 1 1 320px;
+    max-width: 320px;
+    & a {
+        color: #fff;
+        margin-left: 20px;
+        text-decoration: none;
+        @include screen(max, md) {
+            margin-left: 15px;
+        }
+        & sup {
+            font-size: 12px;
+            @include screen(max, xs) {
+                display: none;
+            }
+        }
+    }
+}
+
+[data-menulist-item] {
+    padding-left: 18px !important;
+}

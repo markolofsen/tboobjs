@@ -1,0 +1,24 @@
+[data-icon] {
+    position: relative;
+    height: 0;
+    width: 100%;
+    padding: 0;
+    padding-bottom: 100%;
+    & > svg {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+    & defs {
+        & linearGradient {
+            & stop:nth-child(1) {
+                stop-color: var(--palette-indigo-200) !important;
+            }
+            & stop:nth-child(2) {
+                stop-color: var(--palette-indigo-400) !important;
+            }
+        }
+    }
+}

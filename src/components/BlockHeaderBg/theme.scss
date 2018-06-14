@@ -1,0 +1,60 @@
+@import '../../style/global/global.scss';
+
+// BACKGROUND BLOCK FOR PAGES
+[data-header-bg] {
+
+  color: #fff;
+  @include screen(max, md) {
+      padding: 20px;
+      background-image: none !important;
+      margin-bottom: 0;
+  }
+  @include screen(min, md) {
+      height: 400px;
+      margin-bottom: -100px;
+      padding-bottom: 100px;
+
+      @include bgBreath;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+
+
+  & ul {
+    cursor: default;
+
+    & li {
+        text-align: center;
+    }
+    & [data-li="title"] {
+        & h1 {
+          // text-shadow: var(--shadow-4p);
+          @include screen(max, md) {
+              font-size: 30px;
+              font-weight: var(--font-weight-semi-bold);
+          }
+        }
+    }
+    & [data-li="description"] {
+        display: flex;
+        justify-content: center;
+        & span {
+            max-width: 500px;
+            font-weight: var(--font-weight-thin);
+            @include screen(max, md) {
+                font-size: var(--font-size-tiny);
+            }
+            @include screen(min, md) {
+                font-size: var(--font-size-big);
+            }
+        }
+    }
+
+  }
+}
+
+[data-header-bg="primary"] {
+  background-color: var(--color-primary);
+}

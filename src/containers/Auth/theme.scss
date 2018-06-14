@@ -1,0 +1,54 @@
+@import '../../style/global/global.scss';
+
+
+
+
+
+
+ul[data-list="form"] {
+    & [data-li="error"] {
+        color: var(--color-accent);
+        padding: 10px 0;
+        text-align: center;
+    }
+    & [data-li="footer"] {
+        padding: 30px 0 0;
+    }
+}
+
+.authWrapper {
+    // background: var(--color-primary);
+}
+
+.confirmWrapper {
+    & [data-li="message"] {
+        text-align: center;
+        font-size: var(--font-size-big);
+        margin-bottom: 40px;
+        & [data-el="username"] {
+            text-transform: capitalize;
+            font-weight: var(--font-weight-bold);
+        }
+    }
+}
+.authPreloader {
+    height: calc(100vh - var(--footer-height));
+}
+
+
+.protectedWrapper {
+    padding: 30px 0;
+}
+
+
+.verifyWrapper {
+    [data-li="message"] {
+        text-align: center;
+        font-size: var(--font-size-big);
+        margin-bottom: 40px;
+    }
+    & a {
+        text-decoration: none;
+    }
+
+}

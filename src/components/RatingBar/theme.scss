@@ -1,0 +1,19 @@
+@import '../../style/global/global.scss';
+
+
+.ratingWrapper {
+    display: flex;
+    margin-right: 15px;
+    color: var(--color-primary);
+}
+
+[data-size="lg"] {
+    & > li > span {
+        font-size: 30px;
+    }
+}
+[data-size="xs"] {
+    & > li > span {
+        font-size: var(--font-size-small);
+    }
+}

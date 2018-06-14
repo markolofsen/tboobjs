@@ -1,0 +1,24 @@
+@import '../../../style/global/global.scss';
+
+
+.leftMenu {
+    overflow-y: auto;
+    max-height: calc(100vh - var(--topmenu-height));
+    & [data-menulist-submenu] {
+        & [data-menulist-hint] {
+            color: var(--color-text-secondary);
+            font-size: var(--font-size-tiny);
+            padding-right: 10px;
+        }
+    }
+}
+
+
+[data-menu-drawer="inactive"] {
+    & [data-menu-label] {
+        display: none;
+    }
+    & [data-menulist-submenu] {
+        display: none;
+    }
+}

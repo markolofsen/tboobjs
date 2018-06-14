@@ -1,0 +1,31 @@
+@import '../../../../style/global/global.scss';
+
+
+.introWrapper {
+
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    max-height: 400px;
+    background-color: #000;
+
+    @include screen(max, md) {
+        display: none;
+    }
+}
+
+
+.playerControls {
+    margin-top: -65px;
+    display: flex;
+
+    @include screen(max, md) {
+        padding: 0 0 15px 15px;
+    }
+    @include screen(min, md) {
+        padding: 0 0 30px 30px;
+    }
+    & button {
+        margin-right: 10px;
+    }
+}
